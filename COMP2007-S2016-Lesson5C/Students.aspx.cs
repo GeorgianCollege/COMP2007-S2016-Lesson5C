@@ -95,8 +95,17 @@ namespace COMP2007_S2016_Lesson5C
          */
         protected void StudentsGridView_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
-            // Set the new page numbe
+            // Set the new page number
             StudentsGridView.PageIndex = e.NewPageIndex;
+
+            // refresh the grid
+            this.GetStudents();
+        }
+
+        protected void PageSizeDropDownList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Set the new Page size
+            StudentsGridView.PageSize = Convert.ToInt32(PageSizeDropDownList.SelectedValue);
 
             // refresh the grid
             this.GetStudents();
