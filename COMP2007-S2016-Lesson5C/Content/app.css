@@ -39,7 +39,7 @@ body {
     display: inline;
 }
 ​
-.pagination-ys table > tbody > tr > td > a,
+.pagination-ys table > tbody > tr > td > a ,
 .pagination-ys table > tbody > tr > td > span {
     position: relative;
     float: left;
@@ -47,11 +47,12 @@ body {
     line-height: 1.42857143;
     text-decoration: none;
     color: #dd4814;
-    background-color: #ffffff;
+    background-color: #f5f2f2;
     border: 1px solid #dddddd;
     margin-left: -1px;
 }
-​
+
+.pagination-ys table > tbody > tr > td > a ,​
 .pagination-ys table > tbody > tr > td > span {
     position: relative;
     float: left;
@@ -61,9 +62,9 @@ body {
     margin-left: -1px;
     z-index: 2;
     color: #aea79f;
-    background-color: #f5f5f5;
-    border-color: #dddddd;
-    cursor: default;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
 }
 ​
 .pagination-ys table > tbody > tr > td:first-child > a,
@@ -84,6 +85,7 @@ body {
 .pagination-ys table > tbody > tr > td > a:focus,
 .pagination-ys table > tbody > tr > td > span:focus {
     color: #97310e;
-    background-color: #eeeeee;
-    border-color: #dddddd;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
 }
